@@ -27,9 +27,9 @@ export function Task({taskId, taskContent, isChecked, onDeleteTask, onToggleTask
                 onClickTask={onToggleTask}
                 
             />
-            <div className={check}>
+            <text className={check}>
                 {taskContent}
-            </div>
+            </text>
             <div className={styles.taskDelete}>
                 <Trash 
                     size={20}

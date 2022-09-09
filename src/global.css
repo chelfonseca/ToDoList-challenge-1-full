@@ -25,9 +25,10 @@ body {
     background-color: var(--background);
     font-family: "Inter", "sans-serif";
     line-height: 1.4rem;
-
-
-
+   
+}
+div input button text{
+    box-sizing: border-box;
 }
 
 :focus {

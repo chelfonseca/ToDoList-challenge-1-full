@@ -5,18 +5,19 @@ import { ChangeEvent, ChangeEventHandler } from "react";
 
 
 interface HeaderProps {
-    onNewTaskChange: (newTaskChange: string ) => void;
+    onNewTaskChange: (newTaskChange: string) => void;
     onNewTaskCreate: () => void;
     inputValue: string;
-    isTaskEmpty:boolean;
+    isTaskEmpty: boolean;
 }
 
 
-export function Header({ onNewTaskChange, onNewTaskCreate, inputValue, isTaskEmpty}: HeaderProps) {
+export function Header({ onNewTaskChange, onNewTaskCreate, inputValue, isTaskEmpty }: HeaderProps) {
 
     function handleNewChange(event: ChangeEvent<HTMLInputElement>) {
         onNewTaskChange(event.target.value)
     }
+
 
     return (
         <header className={styles.header}>
@@ -24,7 +25,8 @@ export function Header({ onNewTaskChange, onNewTaskCreate, inputValue, isTaskEmp
             <div className={styles.search}>
                 <input type="text" placeholder="Add a new task"
                     onChange={handleNewChange}
-                    value={inputValue} />
+                    value={inputValue}
+                />
                 <button disabled={isTaskEmpty}
                     onClick={onNewTaskCreate}
                 >Add
