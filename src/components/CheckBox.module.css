@@ -1,0 +1,29 @@
+.checkBox{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.unCheckedTask {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid var(--blue);
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--blue-dark)
+}
+.checkedTask {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--purple-dark);
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--gray-100);
+}

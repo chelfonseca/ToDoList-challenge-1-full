@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.main {
+    width: 90rem;
+    height: 100vh;
+    background-color: var(--gray-600);
+    display: flex;
+    justify-content: space-around;
+}
+.tasksContainer {
+    width: 46rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+    color: azure;
+    
+}
+.counter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.tasksToDo {
+    color: var(--blue-dark);
+    font-size: 1rem;
+    font-weight:bold;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
+.tasksToDo span {
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    background-color: var(--gray-400);
+    border-radius: 16px;
+}
+.tasksDone {
+    color: var(--purple-dark);
+    font-size: 1rem;
+    font-weight:600;
+    font-weight:600;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.tasksDone span {
+    width: 4rem;
+    height: 1.5rem;
+    text-align: center;
+    background-color: var(--gray-500);
+    border-radius: 16px;
+}
+span{
+    color: var(--gray-200);
+}
+
